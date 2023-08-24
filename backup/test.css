@@ -1,18 +1,18 @@
 @charset "UTF-8";
 html {
-  --backgroung-main: #c1d3d3;
-  --backgroung-body: #23CFA7;
-  --color-paragraf: #254545;
-  --border: 2px solid #a19d9d;
-  --color-h: #393B40;
-  --imaltime-meniu: 30px;
-  --margini: 30px;
-  --text-body: white;
-  --spatiere-pagina-mare: 40px;
-  --spatiere-pagina-medie: 20px;
-  --spatiere-pagina-mica: 10px;
-  --background-grid: #99BDB7;
-  --spatiere-grid: 40px;
+  --backgroung-main:#c1d3d3;
+  --backgroung-body:#23CFA7;
+  --color-paragraf:#254545;
+  --border:2px solid #a19d9d;
+  --color-h:#393B40;
+  --imaltime-meniu:30px;
+  --margini:30px;
+  --text-body:white;
+  --spatiere-pagina-mare:40px;
+  --spatiere-pagina-medie:20px;
+  --spatiere-pagina-mica:10px;
+  --background-grid:#99BDB7;
+  --spatiere-grid:40px;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
 }
 
 body {
-  background-color: var(--backgroung-body);
+  background-color: #23CFA7;
   margin: 0;
   padding-left: var(--spatiere-pagina-mare);
   padding-right: var(--spatiere-pagina-mare);
@@ -30,7 +30,6 @@ body {
 nav {
   background-color: var(--backgroung-body);
 }
-
 nav ul {
   padding: 0px;
   margin: 0px;
@@ -43,11 +42,9 @@ ul.meniu {
   width: 100%;
   justify-content: left;
 }
-
 ul.meniu > li {
   width: 150px;
 }
-
 ul.meniu li {
   width: 200px;
   list-style-type: none;
@@ -56,17 +53,14 @@ ul.meniu li {
   outline: var(--border);
   transition: all 0.2s linear;
 }
-
 ul.meniu li:hover {
   background: var(--backgroung-body);
   outline: 5px;
 }
-
 ul.meniu li:hover a {
   color: var(--text-body);
   transition: color 0.2s linear;
 }
-
 ul.meniu li a {
   display: block;
   width: 100%;
@@ -79,19 +73,16 @@ ul.meniu li a {
   box-shadow: inset 0 0 0 transparent;
   transition: box-shadow 0.3s linear;
 }
-
 ul.meniu li a:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s linear;
 }
-
 ul.submeniu {
   display: none;
   z-index: 10;
   position: relative;
   transform-origin: center top;
 }
-
 ul.submeniu li a::before {
   content: "->";
   position: relative;
@@ -100,12 +91,10 @@ ul.submeniu li a::before {
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.2s ease;
 }
-
 ul.submeniu li a:hover::before {
   transform: translateX(0);
   opacity: 1;
 }
-
 ul.meniu li:hover ul.submeniu {
   display: block;
   animation: animatie_submeniu 0.3s 1 linear;
@@ -213,7 +202,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 .butoane-vid a {
   margin-bottom: 0;
   margin-left: var(--margini);
@@ -225,7 +213,6 @@ main {
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
-
 .butoane-vid a:hover {
   background-color: var(--backgroung-body);
 }
@@ -255,7 +242,6 @@ tbody td {
   padding: 10px;
   transition: background-color 0.75s, font-size 0.75s;
 }
-
 tbody tr:hover td {
   background-color: var(--backgroung-body);
   font-size: 120%;
@@ -297,7 +283,6 @@ h1, h2, h3 {
   transition: background-color 0.3s ease, opacity 0.3s ease;
   box-shadow: 0 4px 8px black;
 }
-
 .inceput-pagina::before {
   content: "ᐃ";
   position: absolute;
@@ -306,13 +291,11 @@ h1, h2, h3 {
   transform: translate(-50%, -50%);
   font-size: 40px;
 }
-
 .inceput-pagina:hover {
   background-color: white;
   opacity: 0.8;
   box-shadow: 0 8px 16px black;
 }
-
 .inceput-pagina::after {
   content: "Inceput pagina";
   position: absolute;
@@ -326,7 +309,6 @@ h1, h2, h3 {
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-
 .inceput-pagina:hover::after {
   opacity: 1;
 }
@@ -338,19 +320,15 @@ h1, h2, h3 {
 a {
   color: black;
 }
-
 a:visited {
   color: white;
 }
-
 a[href^=http]:hover {
   color: brown;
 }
-
 a[href^=http]:active {
   border: 1px solid black;
 }
-
 a[href^=http]:active::before {
   content: "⮳";
   font-size: 1.5em;
@@ -360,7 +338,6 @@ a[href^=http]:active::before {
   column-count: 3;
   column-rule: solid;
 }
-
 .coloane::selection {
   color: var(--color-paragraf);
   background-color: var(--backgroung-main);
@@ -375,7 +352,7 @@ a[href^=http]:active::before {
     padding-right: var(--spatiere-pagina-medie);
   }
   #container {
-    --spatiere-grid: 20px;
+    --spatiere-grid:20px;
   }
   ul.meniu {
     font-size: 0.8em;
@@ -408,7 +385,6 @@ hr {
   filter: brightness(200%) grayscale(0);
   transition: all 2s linear;
 }
-
 #imagine1:after, #imagine1:before {
   content: " ";
   position: absolute;
@@ -418,15 +394,13 @@ hr {
   left: 0;
   transition: all 2s linear;
 }
-
 #imagine1:after {
-  background-color: blue;
+  background-color: rgb(0, 0, 255);
   mix-blend-mode: lighten;
   transition: all 2s linear;
 }
-
 #imagine1:hover:before {
-  background-color: #cd00ff;
+  background-color: rgb(205, 0, 255);
   mix-blend-mode: darken;
   transition: all 2s linear;
 }
@@ -469,7 +443,7 @@ hr {
     padding-right: var(--spatiere-pagina-mica);
   }
   #container {
-    --spatiere-grid: 10px;
+    --spatiere-grid:10px;
   }
   @keyframes animatie_meniu {
     0% {

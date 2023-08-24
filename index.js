@@ -31,7 +31,7 @@ app.set("view engine","ejs");
 
 
 app.use("/resurse", express.static(path.join(__dirname,"resurse")));
-
+app.use("/node_modules", express.static(path.join(__dirname,"node_modules")));
 
 
 
@@ -58,7 +58,7 @@ app.get("/ceva", function(req, res){
 
 
 function compileazaScss(caleScss, caleCss) {
-    console.log("cale:", caleCss);
+    // console.log("cale:", caleCss);
     if(!caleCss){
         // let vectorCale = caleScss.split("\\");
         // let numeFisExt = vectorCale[vectorCale.length - 1];

@@ -21,7 +21,7 @@ header {
 }
 
 body {
-  background-color: var(--backgroung-body);
+  background-color: #23CFA7;
   margin: 0;
   padding-left: var(--spatiere-pagina-mare);
   padding-right: var(--spatiere-pagina-mare);

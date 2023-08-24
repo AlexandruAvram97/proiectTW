@@ -1,0 +1,25 @@
+@use '../../node_modules/bootstrap/scss/bootstrap.scss' with (
+    $theme-colors: (
+    "primary": #c32626,
+    "secondary": #254545,
+    ),
+
+    $btn-color: #184949,
+    $body-bg: #23CFA7,
+
+    $grid-breakpoints: (
+        md: 768px,
+        lg: 1024px,
+        xl: 1280px
+    ),
+
+    $btn-border-radius: 15px,
+
+    $h1-font-size: 2.5rem,
+    $h2-font-size: 2rem,
+
+    $font-family-base: 'Arial',
+
+    $spacer: 2rem,
+    $alert-padding-y: 0.75rem,
+);
