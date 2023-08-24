@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <title>Biciclete de top - Magazin online pentru pasionații de ciclism</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="biciclete de vânzare, biciclete de munte, biciclete de șosea, biciclete pentru copii">
+  <meta name="description"
+    content="Website-ul Biciclete de top este un magazin online specializat în vânzarea de biciclete.">
+
+
+  <%- include("../fragmente/head.ejs") %>
+
+
+</head>
+
+<body>
+  <%- include("../fragmente/header.ejs") %>
+    <main>
+      <div id="container">
+        <section id="despre">
+          <h2>Bine ați venit pe site-ul "Biciclete de top"</h2>
+          <hr>
+          <p> <b> Suntem încântați să vă oferim o experiență unică de cumpărături</b>, unde veți găsi cele mai bune
+            biciclete de vânzare.
+            Cu o gamă variată de produse de înaltă calitate, de la <b> biciclete de munte, biciclete de șosea pana la
+              biciclete pentru copii </b> suntem dedicați să vă ajutăm să vă atingeți obiectivele ciclistice și să vă
+            bucurați de aventurile pe două roți. Indiferent dacă sunteți un ciclist amator sau experimentat, vă garantăm
+            că veți găsi bicicleta perfectă pentru stilul și preferințele dumneavoastră.
+            Navigarea pe site-ul nostru este simplă și intuitivă. Pagina principală vă întâmpină cu oferte speciale și
+            informații relevante despre produsele noastre. Categoriile principale, cum ar fi bicicletele de munte,
+            bicicletele de șosea și bicicletele pentru copii, vă ajută să găsiți rapid produsele care vă interesează.
+            Fiecare categorie este subdivizată în subcategorii pentru a vă facilita căutarea și a vă oferi opțiuni
+            diversificate.
+            <br>
+            <br>
+            <q>Bicicleta este o soluție simplă la unele dintre cele mai complicate probleme ale lumii. - HG Wells.</q>
+          </p>
+          <h3>La noi gasiti cele mai noi modele de biciclete.</h3>
+        </section>
+        <section id="orar">
+          <h2>Orar</h2>
+          <table>
+            <caption>Orarul de funcționare</caption>
+            <thead>
+              <tr>
+                <th rowspan="2">Ziua</th>
+                <th colspan="2">Dimineața</th>
+                <th>Seara</th>
+              </tr>
+              <tr>
+                <th>Program Dimineata</th>
+                <th>Pauza de masa</th>
+                <th>Program Dupa-amiaza</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Luni</td>
+                <td>8:00 - 12:00</td>
+                <td>12:00 - 13:00</td>
+                <td>13:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>Marți</td>
+                <td>8:00 - 12:00</td>
+                <td>12:00 - 13:00</td>
+                <td>13:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>Miercuri</td>
+                <td>8:00 - 12:00</td>
+                <td>12:00 - 13:00</td>
+                <td>13:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>Joi</td>
+                <td>8:00 - 12:00</td>
+                <td>12:00 - 13:00</td>
+                <td>13:00 - 17:00</td>
+              <tr>
+                <td>Vineri</td>
+                <td>8:00 - 12:00</td>
+                <td>12:00 - 13:00</td>
+                <td>13:00 - 17:00</td>
+              </tr>
+              <tr>
+                <td>Sambata</td>
+                <td>8:00 - 13:00</td>
+                <td>Inchis</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Duminica</td>
+                <td>8:00 - 10:00</td>
+                <td>Inchis</td>
+                <td></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Orarul este valabil în perioada 01 Martie-01 Noiembrie.</td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <section id="evenimente">
+          <h2>Evenimentele lunii curente</h2>
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Aenean nec libero condimentum, tempor felis ac, aliquet sapien.</li>
+          <li>Nam nec felis vel purus euismod tempor.</li>
+          <video controls style="width:80%;height:auto" poster="/resurse/imagini/videob.jpg">
+            <source src="resurse/video/videob.mp4" type="video/mp4">
+            <source src="resurse/video/videob.ogv" type="video/ogv">
+
+            <track src="resurse/video/tracks/romana.vtt" kind="captions" srclang="ro" label="romană" />
+
+            <track default src="resurse/video/tracks/engleza.vtt" kind="captions" srclang="en" label="engleză" />
+          </video>
+        </section>
+        <section id="anunturi">
+          <h2>Anunturi</h2>
+          <p>
+          <div class="coloane">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent maximus sem rhoncus
+            libero sodales, sed pellentesque arcu pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia curae; Nulla tincidunt cursus fermentum. Pellentesque at eleifend tortor, a
+            scelerisque ligula. Vivamus nec augue ac nulla commodo suscipit. Integer porttitor est sit amet tincidunt
+            ullamcorper. Mauris at ex sit amet metus vulputate dignissim.</div>
+          </p>
+
+        </section>
+        <section id="utilizatori">
+          <h2>Utilizatori</h2>
+          <p>IP-ul dumneavoastră este<%- locals.ip%></p>
+          <p>In viverra ultrices aliquam. Duis elementum, sapien quis euismod pulvinar, tortor turpis vehicula lectus, a
+            consectetur orci sem id libero. Morbi magna erat, elementum quis feugiat quis, iaculis quis augue. Cras
+            blandit posuere euismod. Ut scelerisque turpis dui, ac accumsan magna porta ut. Sed gravida feugiat
+            ullamcorper. Nunc vestibulum lectus eget nibh tempor, vel iaculis mauris venenatis. Mauris eget nisi
+            molestie, suscipit neque sit amet, luctus sapien. Etiam id venenatis quam. Orci varius natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus.</p>
+        </section>
+        <section id="promotii">
+          <h2>Promotii</h2>
+          <p>Descoperă cele mai recente oferte și reduceri speciale pentru biciclete.</p>
+          <ol>
+            <li> <s> 15% </s> </li>
+            <li> <s> 30% </s> </li>
+            <li> <ins> 50%</ins> </li>
+          </ol>
+        </section>
+        <section id="prezentare">
+          <h2>Prezentare</h2>
+          <div class="asezare-vid">
+            <div class="butoane-vid">
+              <a href="https://www.youtube.com/embed/b1a-R-B3pz8" target="vid-b">BMX</a>
+              <a href="https://www.youtube.com/embed/-6GsJIGTbqQ" target="vid-b">MTB</a>
+              <a href="https://www.youtube.com/embed/ERJ-cf_ecO4" target="vid-b">Cursiera</a>
+            </div>
+            <div class="video">
+              <iframe name="vid-b" style="max-width: 100%" src="https://www.youtube.com/embed/b1a-R-B3pz8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <p><a
+              href="https://www.google.com/search?q=biciclete&oq=biciclete&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQABiDARixAxiABDIKCAIQABixAxiABDIKCAMQABjJAxiABDIKCAQQABiSAxiABDINCAUQABiDARixAxiABDIGCAYQRRg9MgYIBxBFGD3SAQgzMDY2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+              target="_blank">Afla mai multe</a></p>
+        </section>
+        <section id="imagine">
+          <h2>Imagini</h2>
+          <p>bicicleta</p>
+          <br>
+          <figure id="imagine1">
+            <picture>
+              <source srcset="./resurse/imagini/bicicleta1mica.png" media="(max-width:700px)">
+              <source srcset="./resurse/imagini/bicicleta1medie.png" media="(max-width:1200px)">
+              <img src="./resurse/imagini/bicicleta1.png" alt="Este o bicicleta" title="Descriere"
+                style="max-width: 100%;">
+            </picture>
+            <figcaption>Modelul primelor biciclete </figcaption>
+          </figure>
+          <p>Da clik pe imagine pentru a o descarca</p>
+          <p>
+            <a href="./resurse/imagini/bicicleta1.png" download="bicicleta1">
+              <img src="./resurse/imagini/bicicleta1.png" alt="bicicleta1" width="134" height="109">
+            </a>
+        </section>
+        <section id="galerie">
+          <h2>Galerie</h2>
+          <div id="image-grid">
+            <%
+              const currentDate=new Date();
+              const currentHour=currentDate.getHours();
+              let displayedImages=0; 
+              for (let imag of locals.imagini) {
+                const timeRange=imag.timp.split("-"); 
+                const startHour=parseInt(timeRange[0].split(":")[0]);
+                const endHour=parseInt(timeRange[1].split(":")[0]);
+                if(currentHour>= startHour && currentHour <= endHour && displayedImages < 10) { %>
+                <figure>
+                  <picture>
+                    <source srcset="<%- imag.fisier_mic %>" media="(max-width:750px)">
+                    <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)"> <img src="<%- imag.fisier %>"
+                      alt="Este o bicicleta">
+                    <figcaption><%- imag.descriere %></figcaption>
+                  </picture>
+                </figure>
+                <% displayedImages++; } } %>
+          </div>
+        </section>
+      </div>
+    </main>
+</body>
+
+<%- include("../fragmente/footer.ejs") %>
+
+</html>

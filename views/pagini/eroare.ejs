@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title>Biciclete de top - Magazin online pentru pasionații de ciclism</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="biciclete de vânzare, biciclete de munte, biciclete de șosea, biciclete pentru copii" >
+        <meta name="description" content="Website-ul Biciclete de top este un magazin online specializat în vânzarea de biciclete.">
+
+        
+        <%- include("../fragmente/head.ejs") %>
+        
+    </head>
+    <body>
+        <%- include("../fragmente/header.ejs") %>
+        <main>
+            <div id="err-coloane">
+                <div id="err-imag">
+                    <img src="<%- locals.imagine %>" />
+                </div>
+                <section>
+                    <h2><%- locals.titlu %></h2>
+                    <p><%- locals.text %></p>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <%- include("../fragmente/footer.ejs") %>
+
+</html> 

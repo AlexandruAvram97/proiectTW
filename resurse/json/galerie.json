@@ -1,0 +1,173 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier":"bicicleta2.png",
+			"titlu":"Competitie",
+			"descriere":"Competitie ciclism",
+			"timp":"14:00-12:00"
+		},
+		{
+			"fisier":"bicicleta3.png",
+			"titlu":"Ciclist",
+			"descriere":"Ciclist la competitie",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta4.png",
+			"titlu":"BMX",
+			"descriere":"Trick-uri pe bicicleta",
+			"timp":"13:00-23:00"
+		},
+		{
+			"fisier":"bicicleta5.png",
+			"titlu":"BMX2",
+			"descriere":"Alte trick-uri",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta6.png",
+			"titlu":"Cursa",
+			"descriere":"Singur in cursa",
+			"timp":"12:00-20:00"
+		},
+		{
+			"fisier":"bicicleta7.png",
+			"titlu":"Bicicleta",
+			"descriere":"Plimbare cu bicicleta",
+			"timp":"12:00-22:00"
+		},
+		{
+			"fisier":"bicicleta8.png",
+			"titlu":"Cursiera",
+			"descriere":"Bicicleta de top",
+			"timp":"01:00-22:00"
+		},
+		{
+			"fisier":"bicicleta2.png",
+			"titlu":"Competitie",
+			"descriere":"Competitie ciclism",
+			"timp":"14:00-12:00"
+		},
+		{
+			"fisier":"bicicleta3.png",
+			"titlu":"Ciclist",
+			"descriere":"Ciclist la competitie",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta4.png",
+			"titlu":"BMX",
+			"descriere":"Trick-uri pe bicicleta",
+			"timp":"13:00-23:00"
+		},
+		{
+			"fisier":"bicicleta5.png",
+			"titlu":"BMX2",
+			"descriere":"Alte trick-uri",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta6.png",
+			"titlu":"Cursa",
+			"descriere":"Singur in cursa",
+			"timp":"12:00-20:00"
+		},
+		{
+			"fisier":"bicicleta7.png",
+			"titlu":"Bicicleta",
+			"descriere":"Plimbare cu bicicleta",
+			"timp":"12:00-22:00"
+		},
+		{
+			"fisier":"bicicleta8.png",
+			"titlu":"Cursiera",
+			"descriere":"Bicicleta de top",
+			"timp":"01:00-22:00"
+		},
+		{
+			"fisier":"bicicleta2.png",
+			"titlu":"Competitie",
+			"descriere":"Competitie ciclism",
+			"timp":"14:00-12:00"
+		},
+		{
+			"fisier":"bicicleta3.png",
+			"titlu":"Ciclist",
+			"descriere":"Ciclist la competitie",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta4.png",
+			"titlu":"BMX",
+			"descriere":"Trick-uri pe bicicleta",
+			"timp":"13:00-23:00"
+		},
+		{
+			"fisier":"bicicleta5.png",
+			"titlu":"BMX2",
+			"descriere":"Alte trick-uri",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta6.png",
+			"titlu":"Cursa",
+			"descriere":"Singur in cursa",
+			"timp":"12:00-20:00"
+		},
+		{
+			"fisier":"bicicleta7.png",
+			"titlu":"Bicicleta",
+			"descriere":"Plimbare cu bicicleta",
+			"timp":"12:00-22:00"
+		},
+		{
+			"fisier":"bicicleta8.png",
+			"titlu":"Cursiera",
+			"descriere":"Bicicleta de top",
+			"timp":"01:00-22:00"
+		},
+		{
+			"fisier":"bicicleta2.png",
+			"titlu":"Competitie",
+			"descriere":"Competitie ciclism",
+			"timp":"14:00-12:00"
+		},
+		{
+			"fisier":"bicicleta3.png",
+			"titlu":"Ciclist",
+			"descriere":"Ciclist la competitie",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta4.png",
+			"titlu":"BMX",
+			"descriere":"Trick-uri pe bicicleta",
+			"timp":"13:00-23:00"
+		},
+		{
+			"fisier":"bicicleta5.png",
+			"titlu":"BMX2",
+			"descriere":"Alte trick-uri",
+			"timp":"10:00-16:00"
+		},
+		{
+			"fisier":"bicicleta6.png",
+			"titlu":"Cursa",
+			"descriere":"Singur in cursa",
+			"timp":"12:00-20:00"
+		},
+		{
+			"fisier":"bicicleta7.png",
+			"titlu":"Bicicleta",
+			"descriere":"Plimbare cu bicicleta",
+			"timp":"12:00-22:00"
+		},
+		{
+			"fisier":"bicicleta8.png",
+			"titlu":"Cursiera",
+			"descriere":"Bicicleta de top",
+			"timp":"01:00-22:00"
+		}
+	]
+}

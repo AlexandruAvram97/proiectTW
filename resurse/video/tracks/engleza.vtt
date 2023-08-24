@@ -1,0 +1,20 @@
+WEBVTT - Some title
+
+STYLE
+::cue {
+    background-color: white;
+    color: #254545;
+    text-align: center;
+    vertical-align: top;
+    font-style: normal;
+}
+
+::cue(b) {
+    font-style: italic;
+}
+ 
+00:00:02.000 --> 00:00:06.000 align:top
+<v>Come on <b>quickly</b> they'll</v>
+
+00:00:06.000 --> 00:00:09.000 align:top
+<v>catch us from behind</v>

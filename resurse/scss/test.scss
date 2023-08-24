@@ -1,0 +1,608 @@
+@charset "UTF-8";
+
+html {
+  --backgroung-main:#c1d3d3;
+  --backgroung-body:#23CFA7;
+  --color-paragraf:#254545;
+  --border:2px solid #a19d9d;
+  --color-h:#393B40;
+  --imaltime-meniu:30px;
+  --margini:30px;
+  --text-body:white;
+  --spatiere-pagina-mare:40px;
+  --spatiere-pagina-medie:20px;
+  --spatiere-pagina-mica:10px;
+  --background-grid:#99BDB7;
+  --spatiere-grid:40px;
+}
+
+header {
+  margin-left: 20px;
+}
+
+body {
+  background-color: var(--backgroung-body);
+  margin: 0;
+  padding-left: var(--spatiere-pagina-mare);
+  padding-right: var(--spatiere-pagina-mare);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+  background-color: var(--backgroung-body);
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+ul {
+  &.meniu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+
+    > li {
+      width: 150px;
+    }
+
+    li {
+      width: 200px;
+      list-style-type: none;
+      height: var(--imaltime-meniu);
+      background: var(--backgroung-main);
+      outline: var(--border);
+      transition: all 0.2s linear;
+
+      &:hover {
+        background: var(--backgroung-body);
+        outline: 5px;
+
+        a {
+          color: var(--text-body);
+          transition: color 0.2s linear;
+        }
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: var(--imaltime-meniu);
+        color: var(--color-h);
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: inset 0 0 0 transparent;
+        transition: box-shadow 0.3s linear;
+
+        &:hover {
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+          transition: box-shadow 0.3s linear;
+        }
+      }
+    }
+  }
+
+  &.submeniu {
+    display: none;
+    z-index: 10;
+    position: relative;
+    transform-origin: center top;
+
+    li a {
+      &::before {
+        content: "->";
+        position: relative;
+        display: inline-block;
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: transform 0.4s ease, opacity 0.2s ease;
+      }
+
+      &:hover::before {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  &.meniu li:hover ul.submeniu {
+    display: block;
+    animation: animatie_submeniu 0.3s 1 linear;
+  }
+}
+
+@keyframes animatie_submeniu {
+  0% {
+    background-color: var(--backgroung-body);
+  }
+
+  100% {
+    background-color: var(--backgroung-main);
+  }
+
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+#ch-meniu, #meniu-icon {
+  display: none;
+}
+
+section {
+  outline: var(--border);
+  background-color: var(--background-grid);
+  padding: var(--margini);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: var(--spatiere-grid);
+  display: grid;
+  grid-template-areas: "z-despre z-despre z-despre z-despre z-despre z-despre z-despre z-despre" "z-orar z-orar z-orar z-orar z-imagine z-imagine z-imagine z-imagine" "z-utilizatori z-utilizatori z-promotii z-promotii z-imagine z-imagine z-imagine z-imagine" "z-evenimente z-evenimente z-evenimente z-prezentare z-prezentare z-prezentare z-anunturi z-anunturi " "z-galerie z-galerie z-galerie z-galerie z-galerie z-galerie z-galerie z-galerie ";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#despre {
+  grid-area: z-despre;
+}
+
+#orar {
+  grid-area: z-orar;
+}
+
+#imagine {
+  grid-area: z-imagine;
+}
+
+#utilizatori {
+  grid-area: z-utilizatori;
+}
+
+#promotii {
+  grid-area: z-promotii;
+}
+
+#evenimente {
+  grid-area: z-evenimente;
+}
+
+#prezentare {
+  grid-area: z-prezentare;
+}
+
+#anunturi {
+  grid-area: z-anunturi;
+}
+
+#galerie {
+  grid-area: z-galerie;
+}
+
+header {
+  border-bottom: var(--border);
+}
+
+main {
+  background-color: var(--backgroung-main);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.asezare-vid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #99BDB7;
+  margin: 20px;
+}
+
+.video iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#prezentare {
+  display: flex;
+  flex-direction: column;
+}
+
+.butoane-vid {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-bottom: 0;
+    margin-left: var(--margini);
+    padding: 10px 20px;
+    border: var(--border);
+    background-color: var(--backgroung-main);
+    color: var(--text-body);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--backgroung-body);
+    }
+  }
+}
+
+#orar {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: center;
+  padding: 10px;
+}
+
+thead th {
+  border: var(--border);
+  font-weight: bold;
+  padding: 8px;
+}
+
+tbody {
+  td {
+    padding: 10px;
+    transition: background-color 0.75s, font-size 0.75s;
+  }
+
+  tr:hover td {
+    background-color: var(--backgroung-body);
+    font-size: 120%;
+  }
+}
+
+tfoot td {
+  border-top: var(--border);
+  padding: 8px;
+}
+
+p {
+  color: var(--color-paragraf);
+  font-size: 15px;
+  transition: font-size 0.3s ease;
+  margin: 10px;
+}
+
+h1, h2, h3 {
+  color: var(--color-h);
+  margin: 10px;
+}
+
+.inceput-pagina {
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+  background-color: var(--background-grid);
+  color: var(--color-h);
+  text-align: center;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.2;
+  border: 5px solid #393B40;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 4px 8px black;
+
+  &::before {
+    content: "ᐃ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+  }
+
+  &:hover {
+    background-color: white;
+    opacity: 0.8;
+    box-shadow: 0 8px 16px black;
+  }
+
+  &::after {
+    content: "Inceput pagina";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #393B40;
+    color: white;
+    padding: 6px 6px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+#acasa-mediu {
+  display: none;
+}
+
+a {
+  color: black;
+
+  &:visited {
+    color: white;
+  }
+
+  &[href^="http"] {
+    &:hover {
+      color: brown;
+    }
+
+    &:active {
+      border: 1px solid black;
+
+      &::before {
+        content: "⮳";
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+.coloane {
+  column-count: 3;
+  column-rule: solid;
+
+  &::selection {
+    color: var(--color-paragraf);
+    background-color: var(--backgroung-main);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 13px;
+  }
+
+  body {
+    padding-left: var(--spatiere-pagina-medie);
+    padding-right: var(--spatiere-pagina-medie);
+  }
+
+  #container {
+    --spatiere-grid:20px;
+  }
+
+  ul.meniu {
+    font-size: 0.8em;
+  }
+
+  #acasa {
+    display: none;
+  }
+
+  #acasa-mediu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .coloane {
+    column-count: 1;
+  }
+}
+
+hr {
+  background-image: linear-gradient(45deg, #0b0b09 30%, transparent 20%), linear-gradient(135deg, #0b0b09 30%, transparent 20%), linear-gradient(-135deg, #0b0b09 30%, transparent 20%), linear-gradient(-45deg, #0b0b09 30%, transparent 20%);
+  background-position: 0 0, 0 100%;
+  background-repeat: repeat-x;
+  background-size: 10px 50%;
+  border: none;
+  height: 10px;
+}
+
+#imagine1 {
+  position: relative;
+  background-size: cover;
+  filter: brightness(200%) grayscale(0);
+  transition: all 2s linear;
+
+  &:after, &:before {
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 2s linear;
+  }
+
+  &:after {
+    background-color: rgb(0, 0, 255);
+    mix-blend-mode: lighten;
+    transition: all 2s linear;
+  }
+
+  &:hover:before {
+    background-color: rgb(205, 0, 255);
+    mix-blend-mode: darken;
+    transition: all 2s linear;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  ul.meniu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: var(--imaltime-meniu);
+  }
+
+  .coloane {
+    column-count: 1;
+  }
+
+  #meniu-icon {
+    height: var(--imaltime-meniu);
+    display: inline-block;
+  }
+
+  nav {
+    position: relative;
+    height: var(--imaltime-meniu);
+  }
+
+  #ch-meniu:checked ~ ul.meniu {
+    display: block;
+    transform-origin: top left;
+    animation: animatie_meniu 0.3s 1 linear;
+  }
+
+  ul.meniu li {
+    width: 100%;
+  }
+
+  #container {
+    grid-template-areas: "z-despre" "z-orar" "z-imagine" "z-utilizatori" "z-promotii" "z-evenimente" "z-prezentare" "z-anunturi";
+    grid-template-columns: 1fr;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  body {
+    padding-left: var(--spatiere-pagina-mica);
+    padding-right: var(--spatiere-pagina-mica);
+  }
+
+  #container {
+    --spatiere-grid:10px;
+  }
+
+  @keyframes animatie_meniu {
+    0% {
+      background-color: var(--backgroung-body);
+    }
+
+    100% {
+      background-color: var(--backgroung-main);
+    }
+
+    0% {
+      transform: scale(0);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+@media print {
+  #banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 0 10%;
+    border: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5em;
+    text-decoration: underline;
+    page-break-after: always;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  body::after {
+    content: "Avram Alexandru";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 2cm;
+    border: 2px double;
+    opacity: 0.65;
+    margin: 10px;
+    text-align: center;
+    line-height: 2cm;
+    font-size: 12px;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  a[href="#"] {
+    display: none;
+  }
+
+  footer {
+    page-break-before: always;
+  }
+
+  img, video, iframe, [src*="youtube.com"], [src*="vimeo.com"] {
+    display: none;
+  }
+
+  .grid-container {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #end {
+    page-break-before: always;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin-bottom: 2cm;
+  margin-top: 2cm;
+  counter-increment: page;
+}
+
+@page :left {
+  margin-left: 2.5cm;
+  margin-right: 0.5cm;
+}
+
+@page :right {
+  margin-right: 2.5cm;
+  margin-left: 0.5cm;
+}
